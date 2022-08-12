@@ -15,7 +15,7 @@ const HomePage = ({ data }) => {
         Lupine Literature
       </h1>
       <div className="absolute inset-0 h-screen bg-white bg-opacity-50 text-black flex flex-col items-center justify-center p-4">
-        <div className="max-w-screen-sm bg-white bg-opacity-90 rounded-md border-2 border-purple-300 prose md:prose-lg lg:prose-xl xl:prose-2xl mx-auto p-4">
+        <div className="max-w-screen-sm bg-white bg-opacity-90 rounded-md border sm:border-2 border-purple-300 prose md:prose-lg lg:prose-xl xl:prose-2xl mx-auto p-4">
           <p className="text-center text-xl text-purple-900 font-semibold">
             Great literature is a thing of beauty.
           </p>

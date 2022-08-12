@@ -24,4 +24,5 @@ module.exports = {
       __key: 'images',
     },
   ],
+  trailingSlash: `always`,
 }
