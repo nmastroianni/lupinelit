@@ -2,15 +2,11 @@ import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 
-const HomePage = ({
-  data: {
-    imageSharp: { gatsbyImageData },
-  },
-}) => {
+const HomePage = ({ data }) => {
   return (
     <div className="min-h-screen">
       <GatsbyImage
-        image={getImage(gatsbyImageData)}
+        image={getImage(data.imageSharp.gatsbyImageData)}
         alt=""
         className="inset-0 h-screen z-0"
       />
