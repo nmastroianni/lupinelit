@@ -3,10 +3,11 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 
 const HomePage = ({ data }) => {
+  console.log(data)
   return (
     <div className="min-h-screen">
       <GatsbyImage
-        image={data.imageSharp.gatsbyImageData}
+        image={data.file.childImageSharp.gatsbyImageData}
         alt=""
         className="inset-0 h-screen z-0"
       />
@@ -34,8 +35,10 @@ export const Head = () => <title>Home Page</title>
 
 export const HomePageQuery = graphql`
   {
-    imageSharp(parent: { id: { eq: "ee372e9b-11ec-5680-bf2d-88c3642beaa7" } }) {
-      gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+    file(name: { eq: "lupine-bg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+      }
     }
   }
 `
