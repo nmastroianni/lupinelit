@@ -31,7 +31,7 @@ const HomePage = ({ data }) => {
 
 export default HomePage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Home &bull; Lupine Literature</title>
 
 export const HomePageQuery = graphql`
   {
